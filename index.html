@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWIGGY CLONE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <h1 class="heading">Food</h1>
+                    <h2 class="dot">.</h2>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <h6>
+                                RECIPES</h6>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-uppercase" href="#">Breakfast &
+                                    Brunch Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Another action</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Lunch Recipes</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Appetizers & Snack Recipes</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Dinner Recipes</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Dessert Recipes</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Drink & Cocktail Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Side Dish Recipes</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Grilling & BBQ Recipes</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Microwave Recipes</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Another action</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Slow-Cooker Recipes
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <h6>POPULAR </h6>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-uppercase" href="#">Trending Now
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Casserole Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Chili Recipes</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Soup Recipes</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Pasta Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Bread Recipes</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Cookie Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Salad Recipes</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Tofu Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Copycat Recipes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <h6>MEAT & SEAFOOD</h6>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-uppercase" href="#">Chicken Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Salmon Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Pork Chop Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Ground Beef Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Shrimp Recipes
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <h6>HEALTY & DIET</h6>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-uppercase" href="#">Keto Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Healthy Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Vegetarian Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Vegan Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Mediterranean Diet Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Weight Watchers Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Low-Carb Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Gluten-Free Recipes
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <h6>HOLIDAYS</h6>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-uppercase" href="#">Dinner Party Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Game Day Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Valentine's Day Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">St. Patrick's Day Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Easter Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Cinco de Mayo Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Mother's Day Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Juneteenth Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Halloween Recipes
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <h6>CUISINE</h6>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-uppercase" href="#">Mexican Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Italian Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Indian Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Korean Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">French Recipes
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <h6> SEASONAL</h6>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-uppercase" href="#">Spring Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Summer Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Fall Recipes
+                                </a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Winter Recipes
+                                </a></li>
+                        </ul>
+                    </li>
+                    <i class="i">
+                        <a href="https://www.food.com/search/?ref=nav">
+                            <i class="fa-sharp-duotone fa-solid fa-magnifying-glass m-3"></i></a>
+                        <a href="https://www.food.com/saves?ref=nav#/?section=recipes">
+                            <i class="fa-regular fa-bookmark m-3"></i></a>
+                        <a href="https://www.food.com/search/"><i class="fa-solid fa-user m-3"></i></a>
+                    </i>
+                </ul>
+            </div>
+    </nav>
+    <h1 style="margin-left: 45px;"> Top Recipes</h1>
+    <p style="margin-left: 45px;">Check out the highest-rated top recipes from our community of home cooks,
+        including fan-favorites<br> including
+        meatloaf, casseroles, quick dinners, easy sides and more.
+    </p>
+    <!--Home Page -->
+    <div class="card ms-5 me-5 mt-3">
+        <img src="Homepage.webp" alt="" srcset="">
+        <div class="card-img-overlay ">
+            <h1 class="display-4" style="color: blueviolet;font-weight: bold;margin-top: 123px;margin-left: 30px; ">
+                Our 54
+                Most-<br>Comforting<br>
+                Casserole Recipes
+            </h1>
+            <button type="button" class="btn-warning btn-lg ms-4">SEE THEM ALL</button>
+        </div>
+    </div>
+    <br><br>
+    <h1 style="margin-left: 45px;">What We're Craving
+    </h1>
+    <!--Advertisement -->
+    <!--This is Overlay-->
+    <div class="card-group" style="margin:0px 30px 0px 30px">
+        <div class="card" style="margin: 15px;">
+            <img src="c1.webp" class="card-img-top">
+            <div class="card-img-overlay text-uppercase" style="font-weight: bold;color: aliceblue;">
+                <p class="text-uppercase"> collection</p>
+                <h2>
+                    73 Winning Chili Recipes</h2>
+            </div>
+        </div>
+        <div class="card" style="margin: 15px;">
+            <img src="c2.webp" class="card-img-top">
+            <div class="card-img-overlay" style="font-weight: bold;color: aliceblue;">
+                <p class="text-uppercase"> collection</p>
+                <h2>
+                    52 Creative Eggplant Recipes to Make Now</h2>
+            </div>
+        </div>
+        <div class="card" style="margin: 15px;">
+            <img src="c3.webp" class="card-img-top">
+            <div class="card-img-overlay" style="font-weight: bold;color: aliceblue;">
+                <p class="text-uppercase"> collection</p>
+                <h2>
+                    40 Quick & Easy Chicken Dinners</h2>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!--6 Box-->
+    <h1 style="margin-left: 45px;">Explore More
+    </h1><br>
+    <div class="row row-cols-1 row-cols-md-3 g-4 ms-4 p-3">
+        <div class="col" style="width: 180px; height: 180px;border-radius: 50%;margin: 15px;">
+            <img src="e1.webp" class="card-img-top"
+                style="background-color: blueviolet; width: 160px; height: 160px;border-radius: 50%;">
+            <h5 class="card-title text-center text-uppercase "><a href="#"> COMFORT Food Classics</a></h5>
+        </div>
+        <div class="col" style=" width: 180px; height: 180px;border-radius: 50%;;margin: 15px;">
+            <img src="e2.webp" class="card-img-top"
+                style="background-color: blueviolet; width: 160px; height: 160px;border-radius: 50%;">
+            <h5 class="card-title text-center text-uppercase"><a href="#"> International Eats </a> </h5>
+        </div>
+        <div class="col" style=" width: 180px; height: 180px;border-radius: 50%;;margin: 15px;">
+            <img src="e3.webp" class="card-img-top" alt="..."
+                style="background-color: blueviolet; width: 160px; height: 160px;border-radius: 50%;">
+            <h5 class="card-title text-center text-uppercase"><a href="#">Breakfast & Brunch</a></h5>
+        </div>
+        <div class="col" style=" width: 180px; height: 180px;border-radius: 50%;;margin: 15px;">
+            <img src="e4.webp" class="card-img-top" alt="..."
+                style="background-color: blueviolet; width: 160px; height: 160px;border-radius: 50%;">
+            <h5 class="card-title text-center text-uppercase"><a href="#"> Community Picks</a>
+            </h5>
+        </div>
+        <div class="col" style=" width: 180px; height: 180px;border-radius: 50%;;margin: 15px;">
+            <img src="e5.webp" class="card-img-top" alt="..."
+                style="background-color: blueviolet; width: 160px; height: 160px;border-radius: 50%;">
+            <h5 class="card-title text-center text-uppercase"><a href="#">Quick & Easy</a></h5>
+        </div>
+        <div class="col" style=" width: 180px; height: 180px;border-radius: 50%;;margin: 15px;">
+            <img src="e6.webp" class="card-img-top" alt="..."
+                style="background-color: blueviolet; width: 160px; height: 160px;border-radius: 50%;">
+            <h5 class="card-title text-center text-uppercase"><a href="#">Copycat Recipes</a>
+            </h5>
+        </div>
+    </div>
+    <br><br>
+    <!--Adv-->
+    <!--Trending-->
+    <h1 class="text-uppercase ms-5">Trending Now
+    </h1>
+    <div class="card-group" style="margin: 35px;">
+        <div class="card" style="margin: 15px;">
+            <img src="t1.webp" class="card-img-top" alt="...">
+            <h5 class="card-title">Spiced Pumpkin Waffles
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="t2.webp" class="card-img-top" alt="...">
+            <h5 class="card-title">Tender Pot Roast
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="t3.webp" class="card-img-top" alt="...">
+            <h5 class="card-title">Easy Dutch Apple Pie
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="t3.webp" class="card-img-top" alt="...">
+            <h5 class="card-title">Chocolate Mousse
+            </h5>
+        </div>
+    </div>
+    <br>
+    <h1 style="margin-left: 45px;">Don't Miss
+    </h1>
+    <!--This is Overlay-->
+    <div class="card-group" style="margin:0px 30px 0px 30px">
+        <div class="card" style="margin: 15px;">
+            <img src="o1.webp" class="card-img-top">
+            <div class="card-img-overlay" style="font-weight: bold;color: aliceblue;">
+                <p class="text-uppercase"> collection</p>
+                <h2>
+                    50 Mediterranean Diet Recipes You'll</h2>
+            </div>
+        </div>
+        <div class="card" style="margin: 15px;">
+            <img src="o2.webp" class="card-img-top">
+            <div class="card-img-overlay" style="font-weight: bold;color: aliceblue;">
+                <p class="text-uppercase"> collection</p>
+                <h2>
+                    NACHOS 20'S WAY</h2>
+            </div>
+        </div>
+        <div class="card" style="margin: 15px;">
+            <img src="o3.webp" class="card-img-top">
+            <div class="card-img-overlay" style="font-weight: bold;color: aliceblue;">
+                <p class="text-uppercase"> collection</p>
+                <h2>
+                    21 Essential Italian Pastas</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h1 class="text-uppercase ms-5">More Ideas
+    </h1>
+    <div class="card-group" style="margin: 30px;">
+        <div class="card" style="margin: 12px;">
+            <img src="i.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase">Chicken Tikka<br> Masala
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="i2.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase">Vegan Bacon
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="i2.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase">Copycat McDonald's <br>Big Mac Sauce
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="i4.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase">Crock-Pot Beef<br> Roast
+            </h5>
+        </div>
+    </div>
+    <!--Add-->
+    <div class="card mb-3" style="max-width: 1240px;margin-left:40px; max-height: 500px;">
+        <div class="row">
+            <div class="col-md-9">
+                <img src="p1.webp" class="img-fluid rounded-start" style=" max-height: 500px;">
+            </div>
+            <div class="col">
+                <div class="card-body" style="margin-right: 20px;">
+                    <p class="text-uppercase">
+                        collection
+                    </p>
+                    <h4 class="card-title text-uppercase">41 Savory Pumpkin Recipes
+                    </h4>
+                    <p class="card-text">Want to embrace the fall pumpkin craze with more than just a spiced latte?
+                        Broaden your autumnal horizons, one un-sweetened recipe at a time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h1 class="text-uppercase ms-5">Fan Favorites
+    </h1>
+    <div class="card-group" style="margin: 30px;">
+        <div class="card" style="margin: 12px;">
+            <img src="y.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Fan Favorites
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y1.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Mozzarella Sticks
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y2.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">5 Minute Vegan Pancakes
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y3.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Shakshuka
+            </h5>
+        </div>
+    </div>
+    <div class="card-group" style="margin: 30px;">
+        <div class="card" style="margin: 12px;">
+            <img src="y4.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Simple Oven-Baked <br>Sea Bass
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y5.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Beef & Broccoli Stir-<br>Fry
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y6.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Fajitas
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y7.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Whipped Cream <br>Frosting
+            </h5>
+        </div>
+    </div>
+    <div class="card-group" style="margin: 30px;">
+        <div class="card" style="margin: 12px;">
+            <img src="y8.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">The Best Belgian <br>Waffles
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y9.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Broiled Steak
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y10.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Oven Crisp Chicken <br>Wings
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y11.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Broccoli and <br>Garlic Pasta
+            </h5>
+        </div>
+    </div>
+    <div class="card-group" style="margin: 30px;">
+        <div class="card" style="margin: 12px;">
+            <img src="y12.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Restaurant Teriyaki <br>Sauce
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y13.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Skyline Chili
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y14.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Banana Nut Bread
+            </h5>
+        </div>
+        <div class="card" style="margin: 12px;">
+            <img src="y15.webp" class="card-img-top" alt="...">
+            <h5 class="card-title text-uppercase p-3">Award Winning Chili
+            </h5>
+        </div>
+    </div>
+    <!--Search-->
+    <div class="card text-center" style="background-color: rgb(242,242,242);padding:30px;">
+        <div class="card-body">
+            <h2 class="card-title">Find More Recipes</h2>
+            <button style="width: 800px;height: 45px; border-radius: 50px;border-color: rgb(242,242,242);">
+                <i class="fa-sharp-duotone fa-solid fa-magnifying-glass"></i>
+            </button><br><br>
+            <a href="#" class="btn btn-warning ">Go somewhere</a>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="row">
+            <div class="col m-3">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-solid fa-message-lines"></i>
+                <i class="fa-solid fa-arrow-up"></i>
+                <P style="font-size:12px;">All Categories
+                    Site Map
+                    About Us
+                    Help</P>
+
+            </div>
+            <div class="col" style="font-size: 14px;text-align: end;">
+                <p>The Discovery Family of Networks<br>
+                    © 2024 Warner Bros. Discovery, Inc. or its subsidiaries and affiliates. All rights reserved.<br>
+                    Advertise
+                    AdChoices
+                    Privacy Policy
+                    Visitor Agreement<br>
+                    California Privacy Policy
+                    Do Not Sell or Share My Personal Informatio</p>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
